@@ -93,8 +93,9 @@ const fontsAll = localFont({
 });
 
 export const metadata = {
-    title: 'MP',
-    description: 'cv-site',
+    title: 'Maksym Parunov',
+    description:
+        'Portfolio & CV website of Full-stack developer Maksym Parunov from Ukraine, Kyiv.',
 };
 
 export default function RootLayout({ children }) {
