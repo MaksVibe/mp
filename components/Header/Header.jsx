@@ -34,11 +34,11 @@ const Header = () => {
             <Container>
                 <Content>
                     <Link href="/">M.P.</Link>
-                    {/* <Nav>
-                        <Link href="/">Portfolio</Link>
-                        <Link href="/">About</Link>
-                        <Link href="/">Contacts</Link>
-                    </Nav> */}
+                    <Nav>
+                        {/* <Link href="/">Portfolio</Link> */}
+                        <Link href="/about">About</Link>
+                        {/* <Link href="/">Contacts</Link> */}
+                    </Nav>
                 </Content>
             </Container>
 

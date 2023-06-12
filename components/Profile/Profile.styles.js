@@ -1,26 +1,30 @@
+import { theme } from '@/styles/theme';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: flex;
-    flex-direction: column-reverse;
-    align-items: normal;
-    gap: 20px;
-    margin-top: 64px;
+    gap: 100px;
+    margin: 200px 0 100px;
 
-    & > div {
-        width: 100%;
-    }
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
+    @media screen and (max-width: 767px) {
+        margin: 100px 0 100px;
     }
 `;
 
-export const ProjLink = styled.a`
-    width: fit-content;
-    overflow: hidden;
-    margin-top: 12px;
+export const TextWrapper = styled.div`
+    max-width: 50%;
+
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+`;
+
+export const ImgWrapper = styled.div`
+    width: 100%;
     border-radius: 8px;
+    max-width: 380px;
+    max-height: 380px;
+    overflow: hidden;
     -webkit-box-shadow: 0px 0px 16px 4px rgba(196, 253, 228, 0.3);
     -moz-box-shadow: 0px 0px 16px 4px rgba(196, 253, 228, 0.3);
     box-shadow: 0px 0px 16px 4px rgba(196, 253, 228, 0.3);
@@ -30,14 +34,9 @@ export const ProjLink = styled.a`
         -moz-box-shadow: 0px 0px 20px 6px rgba(196, 253, 228, 0.6);
         box-shadow: 0px 0px 20px 6px rgba(196, 253, 228, 0.6);
     }
-
     transition: all 400ms;
-`;
 
-export const Description = styled.a`
-    &:hover {
-        color: #9dfbd2;
+    @media screen and (max-width: 767px) {
+        display: none;
     }
-
-    transition: color 400ms ease-out;
 `;
