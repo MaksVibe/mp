@@ -10,7 +10,6 @@ export default {
         { src: '/icon-react.svg' },
         { src: '/icon-redux.svg' },
         { src: '/icon-mongoose.svg' },
-        { src: '/icon-parceljs.svg' },
         { src: '/icon-axios.svg' },
         { src: '/icon-tailwind.svg' },
         { src: '/icon-styled-components.svg' },
@@ -20,7 +19,6 @@ export default {
         { src: '/icon-next.svg' },
         { src: '/icon-bootstrap.svg' },
         { src: '/icon-expressjs.svg' },
-        { src: '/icon-gulp.svg' },
         { src: '/icon-reactn.svg' },
     ],
     tools: [
@@ -32,6 +30,8 @@ export default {
         { src: '/icon-eslint.svg' },
         { src: '/icon-prettier.svg' },
         { src: '/icon-mongodb.svg' },
+        { src: '/icon-parceljs.svg' },
+        { src: '/icon-gulp.svg' },
     ],
     deploy: [
         { src: '/icon-github.svg' },
