@@ -134,10 +134,10 @@ img:not([height]) {
 }
 
 html {
-    font-size: 16px;
     scroll-behavior: smooth;
+        font-size: 16px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 992px) {
         font-size: 20px;
     }
 }
@@ -153,7 +153,7 @@ body {
     min-height: 100vh;
     width: 100%;
 
-    font-family: 'notoSans', sans-serif;
+    font-family: var(--montserrat), sans-serif; 
     font-style: normal;
     font-size: inherit;
     font-weight: 300;
@@ -184,9 +184,9 @@ main {
 }
 
 h1 {
-    font-family: 'overpass', sans-serif;
+    font-family: var(--overpass), sans-serif;
     font-size: 68px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
 }
 

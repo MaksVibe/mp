@@ -20,6 +20,10 @@ export const Heading = styled.h1`
 
 export const SubHeading = styled.h2`
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.6rem;
+    }
 `;
 
 export const Description = styled.p`
