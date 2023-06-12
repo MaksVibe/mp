@@ -1,6 +1,6 @@
 import localFont from 'next/font/local';
 import StyledComponentsRegistry from '@/lib/registry';
-import './globals.css';
+import { GlobalStyles } from './globalStyles';
 
 const fontsAll = localFont({
     src: [
@@ -100,7 +100,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className={fontsAll.className}>
+        <html lang="en">
+            <GlobalStyles />
             <body>
                 <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
             </body>

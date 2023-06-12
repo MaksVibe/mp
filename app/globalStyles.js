@@ -1,3 +1,8 @@
+'use client';
+import { theme } from '@/styles/theme';
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
 /* Box sizing rules */
 *,
 *::before,
@@ -32,12 +37,6 @@ p {
     margin: 0;
 }
 
-/* Remove default border */
-html,
-body {
-    border: 0;
-}
-
 /* Remove list styles on ul, ol elements */
 ul,
 ol {
@@ -61,6 +60,7 @@ a:hover {
 /* Responsive images */
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -133,17 +133,87 @@ img:not([height]) {
     }
 }
 
-/* Set core root defaults */
 html {
-    height: 100%;
+    font-size: 16px;
     scroll-behavior: smooth;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
 }
 
-/* Set core body defaults */
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    border: 0;
+}
+
 body {
     min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.3;
-    overflow-x: hidden;
     width: 100%;
+
+    font-family: 'notoSans', sans-serif;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: 300;
+
+    line-height: 1.3;
+    letter-spacing: 0.7px;
+    text-rendering: optimizeSpeed;
+    color: ${theme.colors.lightText};
+
+    background-color: ${theme.colors.foreground};
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            ${theme.colors.backgroundStart}
+        )
+        ${theme.colors.backgroundEnd};
 }
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+
+main {
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'overpass', sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h3 {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: ${theme.colors.lightText};
+}
+
+h3::before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    height: 2px;
+    background-color: ${theme.colors.accent};
+}
+
+`;
