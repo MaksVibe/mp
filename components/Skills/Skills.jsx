@@ -2,8 +2,8 @@
 import Container from '../Container/Container';
 import BorderBot from '../BorderBot/BorderBot';
 import { Column, Wrapper, SubHeading, List, ListItem } from './Skills.styles';
-import skills from './skills';
-import Dots from './Dots/Dots';
+import { skills } from './skillsDB';
+import Dots from '../Dots/Dots';
 
 const Skills = () => {
     const { hard, soft } = skills;
@@ -20,13 +20,8 @@ const Skills = () => {
                     <Column>
                         <SubHeading>Hard</SubHeading>
                         <List>
-                            {hard.map(skill => (
-                                <ListItem
-                                    key={
-                                        hard.findIndex(item => item == skill) +
-                                        1
-                                    }
-                                >
+                            {hard.map((skill, index) => (
+                                <ListItem key={index + 1}>
                                     <p>{skill.skillName}</p>
                                     <Dots amount={skill.proficiency} />
                                 </ListItem>
@@ -36,13 +31,8 @@ const Skills = () => {
                     <Column>
                         <SubHeading>Soft</SubHeading>
                         <List>
-                            {soft.map(skill => (
-                                <ListItem
-                                    key={
-                                        soft.findIndex(item => item == skill) +
-                                        1
-                                    }
-                                >
+                            {soft.map((skill, index) => (
+                                <ListItem key={index + 1}>
                                     <p>{skill.skillName}</p>
                                     <Dots amount={skill.proficiency} />
                                 </ListItem>

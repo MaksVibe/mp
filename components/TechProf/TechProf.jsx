@@ -24,7 +24,7 @@ const TechProf = () => {
                 <Container>
                     <TechStack>
                         {Object.keys(sprite).map((k, i) => (
-                            <Technology key={i}>
+                            <Technology key={i + 1}>
                                 <h3>{k}</h3>
                                 <Sprite>
                                     {sprite[k].map(

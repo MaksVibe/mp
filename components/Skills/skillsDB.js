@@ -1,4 +1,4 @@
-export default {
+export const skills = {
     hard: [
         { skillName: 'JavaScript', proficiency: 4 },
         { skillName: 'TypeScript', proficiency: 2 },
