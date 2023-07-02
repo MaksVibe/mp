@@ -1,22 +1,36 @@
 'use client';
-import Container from '../Container/Container';
-import LastProject from '../LastProject/LastProject';
-import { Content, Description, Heading, SubHeading } from './Hero.styles';
+import Image from 'next/image';
+import Button from '../Button/Button';
+import { Content, Description, Heading, Span, Wrapper, ImgWrapper, BgImg } from './Hero.styles';
 
 const Hero = () => {
-    return (
-        <Container>
-            <Content>
-                <SubHeading>Full Stack Developer</SubHeading>
-                <Heading>Maksym Parunov</Heading>
-                <Description>
-                    I develop web applications for various platforms and
-                    specialize in server development
-                </Description>
-                <LastProject />
-            </Content>
-        </Container>
-    );
+	return (
+		<Wrapper>
+			<Heading>Maksym Parunov</Heading>
+			<Content>
+				<div>
+					<Description>
+						I develop web applications for various platforms and specialize in server development
+					</Description>
+					<br />
+					<Description style={{ marginBottom: '42px' }}>
+						As a full-stack web developer with over a year of commercial experience, I have honed my skills in a variety
+						of technologies, including React, TypeScript, Next.js and git-cli. My common stack of technologies includes
+						React and Node.js.With a focus on clean code and best practices, I am committed to delivering high-quality
+						work that meets project deadlines. I have an experience managing a small department.
+					</Description>
+					{/* <Button hero="true" /> */}
+				</div>
+				<ImgWrapper>
+					<div>
+						<Image src={'/profile.png'} width={322} height={340} alt="Profile picture" className="" />
+					</div>
+					<Span>develop web applications</Span>
+				</ImgWrapper>
+			</Content>
+			<BgImg />
+		</Wrapper>
+	);
 };
 
 export default Hero;
