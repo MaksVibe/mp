@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
+
 // import Button from '../Button/Button';
-import { Content, Description, Heading, Span, Wrapper, ImgWrapper, BgImg } from './Hero.styles';
+import { BgImg,Content, Description, Heading, ImgWrapper, Span, Wrapper } from './Hero.styles';
 
 const Hero = () => {
 	return (

@@ -1,8 +1,8 @@
 'use client';
 import Container from '../Container/Container';
-import { Column, Wrapper, SubHeading, List, ListItem } from './Skills.styles';
-import { skills } from './skillsDB';
 import Dots from '../Dots/Dots';
+import { Column, List, ListItem,SubHeading, Wrapper } from './Skills.styles';
+import { skills } from './skillsDB';
 
 const Skills = () => {
 	const { hard, soft } = skills;

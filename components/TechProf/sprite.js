@@ -1,4 +1,4 @@
-export default {
+export const sprite = {
 	languages: [
 		{ src: '/icon-javascript.svg' },
 		{ src: '/icon-typescript.svg' },

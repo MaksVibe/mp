@@ -1,8 +1,9 @@
 'use client';
-import Container from '../Container/Container';
-import { Content, Heading, Sprite, Item, TechStack, Technology } from './TechProf.styles';
-import sprite from './sprite';
 import Image from 'next/image';
+
+import Container from '../Container/Container';
+import { sprite } from './sprite';
+import { Content, Heading, Item, Sprite, Technology,TechStack } from './TechProf.styles';
 
 const TechProf = () => {
 	return (

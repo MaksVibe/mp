@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
+
 import Container from '../Container/Container';
-import { TextWrapper, ImgWrapper, Wrapper } from './Profile.styles';
+import { ImgWrapper, TextWrapper, Wrapper } from './Profile.styles';
 
 const Profile = () => {
 	return (

@@ -1,7 +1,8 @@
+import { Source_Code_Pro } from 'next/font/google';
+
 import { Header } from '@/components/Header/Header';
 import StyledComponentsRegistry from '@/lib/registry';
 import { GlobalStyles } from '@/styles/globalStyles';
-import { Source_Code_Pro } from 'next/font/google';
 
 const fonts = Source_Code_Pro({
 	weight: ['400', '500', '700'],
