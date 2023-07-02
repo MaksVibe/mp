@@ -1,4 +1,3 @@
-import { Header } from '@/components/Header/Header';
 import Profile from '@/components/Profile/Profile';
 import Skills from '@/components/Skills/Skills';
 import { Suspense } from 'react';
