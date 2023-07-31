@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
   position: relative;
   margin-bottom: 3rem;
   padding: 0;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 9.6rem;
+  }
 `;
 
 export const BgImg = styled.div`
