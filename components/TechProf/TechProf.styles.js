@@ -1,21 +1,57 @@
 import styled from 'styled-components';
 
-export const Content = styled.div`
+export const Main = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
 
-  padding: 0 35px 154px 115px;
+  padding-left: 15px;
 
   font-size: 20px;
   color: white;
   background-color: #131313;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 75px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
+`;
+
+export const Content = styled.div`
+  flex: 2;
+  background-color: #131518;
+  font-size: 16px;
+  padding: 15px 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: inherit;
+    padding: 56px 48px 98px 98px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 136px;
+  }
 `;
 
 export const MainHeading = styled.h2`
   position: relative;
   margin-top: 56px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   flex: 1;
 
   &::after {
@@ -31,16 +67,26 @@ export const MainHeading = styled.h2`
 
 export const Heading = styled.h3`
   text-transform: capitalize;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const TechStack = styled.ul`
-  flex: 2;
   width: 100%;
-  padding: 56px 0 0 136px !important;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  background-color: #131518;
+  gap: 42px;
+
+  @media screen and (min-width: 768px) {
+    gap: 42px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 15px;
+  }
 `;
 
 export const Sprite = styled.ul`
