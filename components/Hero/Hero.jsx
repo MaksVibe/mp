@@ -13,13 +13,9 @@ const Hero = () => {
         <Content>
           <DescriptionWrapper>
             <Description>
-              I develop web applications for various platforms and specialize in server development
-            </Description>
-            <Description>
-              As a full-stack web developer with over two years of commercial experience, I have honed my skills in a
-              variety of technologies, including React, TypeScript, Next.js and git-cli. My common stack of technologies
-              includes React and Node.js.With a focus on clean code and best practices, I am committed to delivering
-              high-quality work that meets project deadlines. I have an experience managing a small department.
+              My name is Maxim Parunov, and I specialize in web development with significant experience in building web
+              applications. I possess in-depth knowledge of JavaScript (JS) and TypeScript (TS), enabling me to craft
+              robust and dependable web applications that adhere to contemporary standards.
             </Description>
             <Button hero="true" />
           </DescriptionWrapper>
