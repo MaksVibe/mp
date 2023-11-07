@@ -1,10 +1,10 @@
 export default function robots() {
-	return {
-		rules: {
-			userAgent: '*',
-			allow: '/',
-			disallow: '/private/',
-		},
-		sitemap: 'https://mp-o.vercel.app/sitemap.xml',
-	};
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
+    },
+    sitemap: 'https://www.max-parunov.pro/sitemap.xml',
+  };
 }

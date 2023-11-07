@@ -1,8 +1,8 @@
 export default function sitemap() {
-	return [
-		{
-			url: 'https://mp-o.vercel.app/',
-			lastModified: new Date(),
-		},
-	];
+  return [
+    {
+      url: 'https://www.max-parunov.pro/',
+      lastModified: new Date(),
+    },
+  ];
 }
