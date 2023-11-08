@@ -22,8 +22,8 @@ const TechProf = () => {
                 <li key={i + 1}>
                   <Heading>{k}</Heading>
                   <Sprite>
-                    {sprite[k].map(
-                      (icon: IconSpriteType, index: number) =>
+                    {(sprite as Record<string, IconSpriteType[]>)[k].map(
+                      (icon, index: number) =>
                         icon && (
                           <Item key={index + 1}>
                             <Image

@@ -16,7 +16,7 @@ const Hero = () => {
               applications. I possess in-depth knowledge of JavaScript (JS) and TypeScript (TS), enabling me to craft
               robust and dependable web applications that adhere to contemporary standards.
             </Description>
-            <Button hero />
+            <Button />
           </DescriptionWrapper>
           <ImgWrapper>
             <Image src={'/profile.png'} width={322} height={340} alt="Profile picture" className="" />
