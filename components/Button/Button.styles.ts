@@ -1,9 +1,10 @@
 'use client';
 import styled from 'styled-components';
 
-import { colors } from '@/styles/theme';
+import { colors } from '../../styles/theme';
+import { ButtonTypes } from './Button';
 
-export const Btn = styled.button`
+export const Btn = styled.button<ButtonTypes>`
   display: block;
   padding: ${({ hero }) => (hero ? '16px 25px 23px' : '0.74rem 1.12rem')};
 

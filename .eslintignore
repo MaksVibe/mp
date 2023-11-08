@@ -11,5 +11,6 @@ _temp*
 *._backup*
 *._temp*
 
+package-lock.json
 node_modeules/*
 .next/*

@@ -1,8 +1,7 @@
-'use client';
 import Image from 'next/image';
 
 import Skills from '../Skills/Skills';
-import { sprite } from './sprite';
+import { IconSpriteType, sprite } from './sprite';
 import { Content, Heading, Item, Main, MainHeading, Sprite, TechStack, Wrapper } from './TechProf.styles';
 
 const TechProf = () => {
@@ -24,7 +23,7 @@ const TechProf = () => {
                   <Heading>{k}</Heading>
                   <Sprite>
                     {sprite[k].map(
-                      (icon, index) =>
+                      (icon: IconSpriteType, index: number) =>
                         icon && (
                           <Item key={index + 1}>
                             <Image
@@ -34,7 +33,7 @@ const TechProf = () => {
                               alt={icon.src.slice(1, icon.src.indexOf('.'))}
                             />
                           </Item>
-                        )
+                        ),
                     )}
                   </Sprite>
                 </li>

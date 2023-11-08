@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"],
-      "@/fonts": ["./styles/fonts"]
-    },
-    "baseUrl": "."
-  }
-}

@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { Icon } from './Burger.styles';
 
-export function Burger({ close }) {
+export function Burger({ close }: { close?: boolean }) {
   return (
     <>
       <Icon close={close} />

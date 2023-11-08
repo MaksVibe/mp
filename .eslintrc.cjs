@@ -1,16 +1,23 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
+    ecmaVersion: 'latest',
   },
   env: {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react/jsx-runtime', 'next/core-web-vitals'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/jsx-runtime',
+    'next/core-web-vitals',
+  ],
   overrides: [],
-  plugins: ['react', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
   rules: {
-    'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'always'],
     'simple-import-sort/imports': [

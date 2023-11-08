@@ -1,4 +1,4 @@
-const { css } = require('styled-components');
+import { css } from 'styled-components';
 
 export const animations = css`
   @keyframes blink {

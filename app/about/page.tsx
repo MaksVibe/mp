@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 
-import Profile from '@/components/Profile/Profile';
-
+import Profile from '../../components/Profile/Profile';
 import Loading from '../loading';
 
 export default function About() {

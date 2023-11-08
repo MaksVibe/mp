@@ -1,8 +1,9 @@
+'use client';
 import styled from 'styled-components';
 
-import { colors } from '@/styles/theme';
+import { colors } from '../../../styles/theme';
 
-export const Icon = styled.div`
+export const Icon = styled.div<{ close?: boolean }>`
   width: 1.6rem;
   height: 2px;
   background-color: ${colors.mainText};

@@ -1,4 +1,3 @@
-'use client';
 import { Column, List, ListItem, SubHeading, Wrapper } from './Skills.styles';
 import { skills } from './skillsDB';
 

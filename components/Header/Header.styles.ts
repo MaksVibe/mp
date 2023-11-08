@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 
-import { theme } from '@/styles/theme';
+import { theme } from '../../styles/theme';
 
-export const Wrapper = styled.div`
-  position: fixed;
-  width: 100%;
-  min-height: 100vh;
-  z-index: 10;
-  background-color: white;
-  top: 0;
-  right: 0;
+export const Wrapper = styled.header`
+  padding: 1rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Nav = styled.nav`
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   margin-right: 2rem;
 
@@ -32,9 +29,6 @@ export const Nav = styled.nav`
 `;
 
 export const Content = styled.div`
-  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  padding: 60px 60px 20px;
+  align-items: center;
 `;

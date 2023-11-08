@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const getMobileDetect = (userAgent) => {
+const getMobileDetect = (userAgent: string) => {
   const isAndroid = () => Boolean(userAgent.match(/Android/i));
   const isIos = () => Boolean(userAgent.match(/iPhone|iPad|iPod/i));
   const isOpera = () => Boolean(userAgent.match(/Opera Mini/i));

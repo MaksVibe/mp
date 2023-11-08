@@ -1,8 +1,7 @@
 import { Suspense } from 'react';
 
-import Hero from '@/components/Hero/Hero';
-import TechProf from '@/components/TechProf/TechProf';
-
+import Hero from '../components/Hero/Hero';
+import TechProf from '../components/TechProf/TechProf';
 import Loading from './loading';
 
 export const metadata = {

@@ -4,8 +4,7 @@ import { useState } from 'react';
 
 import Link from 'next/link';
 
-import useMobileDetect from '@/hooks/useMobileDetect';
-
+import useMobileDetect from '../../hooks/useMobileDetect';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
 import { Content, Nav, Wrapper } from './Header.styles';

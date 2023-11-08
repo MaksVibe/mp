@@ -1,4 +1,4 @@
-export const sprite = {
+export const sprite: SpriteType = {
   languages: [
     { src: '/icon-javascript.svg' },
     { src: '/icon-typescript.svg' },
@@ -46,4 +46,17 @@ export const sprite = {
     { src: '/icon-teamwork.svg' },
     { src: '/icon-trello.svg' },
   ],
+};
+
+type SpriteType = {
+  languages: IconSpriteType[];
+  libraries: IconSpriteType[];
+  frameworks: IconSpriteType[];
+  tools: IconSpriteType[];
+  deploy: IconSpriteType[];
+  other: IconSpriteType[];
+};
+
+export type IconSpriteType = {
+  src: string;
 };

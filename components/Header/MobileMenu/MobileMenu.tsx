@@ -1,12 +1,14 @@
-'use client';
-
 import Link from 'next/link';
 
 import Button from '../../Button/Button';
 import { Content, Nav, Wrapper } from './MobileMenu.styles';
 
-export function MobileMenu({ toggleMenu, show }) {
-  console.log('show', show);
+type MobileMenuTypes = {
+  toggleMenu: () => void;
+  show: boolean;
+};
+
+export function MobileMenu({ toggleMenu, show }: MobileMenuTypes) {
   return show ? (
     <Wrapper>
       <Content>
