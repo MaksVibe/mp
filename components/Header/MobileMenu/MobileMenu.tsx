@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Button from '../../Button/Button';
+import Button from '../../../common/Button/Button';
 import { Content, Nav, Wrapper } from './MobileMenu.styles';
 
 type MobileMenuTypes = {

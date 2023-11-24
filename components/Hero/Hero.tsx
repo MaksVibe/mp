@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Button from '../Button/Button';
+import Button from '../../common/Button/Button';
 import Container from '../Container/Container';
 import { BgImg, Content, Description, DescriptionWrapper, Heading, ImgWrapper, Span, Wrapper } from './Hero.styles';
 
