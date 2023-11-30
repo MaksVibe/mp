@@ -5,14 +5,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import Button from '../../common/Button/Button';
-import useMobileDetect from '../../hooks/useMobileDetect';
+import useWindowSize from '../../hooks/useWindowSize';
 import Container from '../Container/Container';
 import { Content, Nav, Wrapper } from './Header.styles';
 import { MobileMenu } from './MobileMenu/MobileMenu';
 
 export function Header() {
   const [showMenu, setShowMenu] = useState(false);
-  const mobile = useMobileDetect().isMobile();
+  const { width } = useWindowSize();
 
   const handleClose = () => (showMenu ? setShowMenu(false) : setShowMenu(true));
   return (
@@ -20,18 +20,21 @@ export function Header() {
       <Container>
         <Wrapper>
           <Link href="/">M.P.</Link>
-          {!mobile && (
+          {width && width > 768 ? (
             <Content>
               <Nav>
                 <Link href="/about">Profile</Link>
               </Nav>
               <Button />
             </Content>
+          ) : (
+            <div>
+              <Button burger toggleMenu={handleClose} />
+            </div>
           )}
-          {mobile && <Button burger toggleMenu={handleClose} />}
         </Wrapper>
       </Container>
-      {mobile && <MobileMenu show={showMenu} toggleMenu={handleClose} />}
+      {width && width < 768 && <MobileMenu show={showMenu} toggleMenu={handleClose} />}
     </>
   );
 }

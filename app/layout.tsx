@@ -21,10 +21,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <GlobalStyles />
       <body className={fonts.className}>
-        <StyledComponentsRegistry>
-          <Header />
-          {children}
-        </StyledComponentsRegistry>
+        <Header />
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { colors } from '../../../styles/theme';
 
-export const Icon = styled.div<{ close?: boolean }>`
+export const Icon = styled.div<{ $close?: boolean }>`
   width: 1.6rem;
   height: 2px;
   background-color: ${colors.mainText};
@@ -11,8 +11,8 @@ export const Icon = styled.div<{ close?: boolean }>`
     margin-bottom: 4px;
   }
 
-  ${({ close }) =>
-    close &&
+  ${({ $close }) =>
+    $close &&
     `
     position: absolute;
     &:first-child {
