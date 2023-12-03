@@ -13,10 +13,12 @@
     "next": "^14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",

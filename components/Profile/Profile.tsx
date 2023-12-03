@@ -1,4 +1,4 @@
-import Container from '../Container/Container';
+import Container from '../../common/Container/Container';
 import { Heading, Wrapper } from './Profile.styles';
 
 const Profile = () => {

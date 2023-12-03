@@ -12,11 +12,11 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <Suspense fallback={<Loading />}>
-      <main>
+    <main>
+      <Suspense fallback={<Loading />}>
         <Hero />
         <TechProf />
-      </main>
-    </Suspense>
+      </Suspense>
+    </main>
   );
 }

@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { Source_Code_Pro } from 'next/font/google';
 
+// import Modal from '../common/Modal/Modal';
 import { Header } from '../components/Header/Header';
 import StyledComponentsRegistry from '../lib/registry';
 import { GlobalStyles } from '../styles/globalStyles';
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={fonts.className}>
         <Header />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        {/* <Modal /> */}
       </body>
     </html>
   );

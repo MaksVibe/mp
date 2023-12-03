@@ -5,16 +5,19 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import Button from '../../common/Button/Button';
+import Container from '../../common/Container/Container';
 import useWindowSize from '../../hooks/useWindowSize';
-import Container from '../Container/Container';
+// import useModal from '../../utils/modal/stateModal';
 import { Content, Nav, Wrapper } from './Header.styles';
 import { MobileMenu } from './MobileMenu/MobileMenu';
 
 export function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  // const { show } = useModal();
   const { width } = useWindowSize();
 
   const handleClose = () => (showMenu ? setShowMenu(false) : setShowMenu(true));
+
   return (
     <>
       <Container>
@@ -25,16 +28,16 @@ export function Header() {
               <Nav>
                 <Link href="/about">Profile</Link>
               </Nav>
-              <Button />
+              {/* <Button onClick={show} content="Consult" header /> */}
             </Content>
           ) : (
             <div>
-              <Button burger toggleMenu={handleClose} />
+              <Button burger onClick={handleClose} />
             </div>
           )}
         </Wrapper>
       </Container>
-      {width && width < 768 && <MobileMenu show={showMenu} toggleMenu={handleClose} />}
+      {width && width < 768 && <MobileMenu showMenu={showMenu} toggleMenu={handleClose} />}
     </>
   );
 }

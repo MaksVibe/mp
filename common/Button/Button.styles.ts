@@ -12,6 +12,7 @@ interface ButtonProps {
 
 export const Btn = styled.button<ButtonProps>`
   display: block;
+  text-align: center;
 
   ${({ $ishero }) => ($ishero ? 'padding: 16px 25px 23px; margin: 0 auto;' : 'padding: 0.74rem 1.12rem;')};
 
