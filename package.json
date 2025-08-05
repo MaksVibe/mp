@@ -1,30 +1,30 @@
 {
   "name": "mp",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "next": "^14.0.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "15.4.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "styled-components": "^6.1.1",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
     "@types/nodemailer": "^6.4.14",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
-    "eslint-config-next": "^14.0.1",
+    "eslint-config-next": "15.4.4",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-prettier": "^5.0.1",
@@ -33,5 +33,9 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "overrides": {
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6"
   }
 }
